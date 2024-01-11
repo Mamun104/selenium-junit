@@ -17,15 +17,11 @@ public class Home {
 
         String titleActual = driver.getTitle();
         String titleExpected = "DEMOQA";
+        String titleNotExpected = "DEMOQ";
         Assertions.assertEquals(titleExpected,titleActual);
+        Assertions.assertNotEquals(titleNotExpected,titleActual);
         System.out.println(titleActual);
 
-
-
-
-
     }
-
-
 
 }
