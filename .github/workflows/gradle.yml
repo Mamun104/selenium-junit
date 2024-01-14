@@ -35,13 +35,5 @@ jobs:
       with:
         arguments: build
         run: gradle clean test
-    - name: Test marketplace action
-    - uses: simple-elf/allure-report-action@master
-      if: always()
-      id: allure-report
-      with:
-        allure_results: build/allure-results
-        gh_pages: gh-pages
-        allure_report: allure-report
         
         
